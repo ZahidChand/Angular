@@ -1,0 +1,120 @@
+Prerequisit for angular are
+HTML
+CSS
+JAVASCRIPT
+
+We dont need to master this but basic understanding should be there before starting Angular.
+
+********************************************************************************************************
+						***BASIC***
+TYPESCRIPT:-
+We should start with Typescript 
+Typescript is very important before starting with angular .
+You should have basic knowledge of typescript and so working on angular makes much more easy.
+
+ANGULAR CLI:-
+	With the help of angular cli you can make projects with simple commands just with one line of command code.
+Apart from creating projects angular cli also performs many tasks such as deploy,testing,bunddling.
+
+NGMODULE:-
+	NgModules are basic building blocks of angular applications.
+
+Components:-
+	Angular has a component based architecture .
+ Components are combination of class i.e logic , template i.e html and metadata that ties your class and template
+
+TEMPLATE SYNTAX:-
+	1.Interpolation
+	2.Property Binding
+	3.Event Binding
+	4.Two Way Binding
+	5.Pipes
+	6.Template Reference variable
+
+DIRECTIVES:-
+	Directives are custome html elements that are used in angular application.
+
+There are three types of directives in angular:
+	1.Components( Which you saw already before)
+	2.Structural Directives:--
+		This directives change DOM layout by addind and removing DOM elements.
+ a.ngIf
+ b.ngFor
+ c.ngSwitch
+
+	3.Attributes Directives:--
+  To Change the behaviour of another directives ,component or  elements
+
+COMPONENT STYLING:
+	For adding and removing classes you have ngClass directives.
+	For adding styles you have ngStyle directives.
+
+COMPONENT INTERACTION:--
+Input and Output  decorators
+
+Input is used to pass data from parent to child
+and output is used to pass data from child to parent.
+
+COMPONENTS LIFECYCLE 
+
+Different phases of lifecycle and different phases of lifecycle hooks 
+Also  Learn About API how to call APIs from angular to backend api.
+
+********************************************************************************************************
+						***ADVANCE***
+SERVICES:--
+Service is a class with specific purpose
+	eg:- Fetching list of products from an api.
+Services can also depend  on another services.
+	1.Dependency Injections
+	2.Providing Services
+
+OBSERVABLES:--
+	Observables are recommeded technique for handling events , async and also  handling multiple values.
+	 Create,Subscribe,Execute,Dispose Operators
+
+HTTP CLIENT:--
+	Http client service with http client you can make 
+	GET,POST,PUT and DELETE Operations
+	Typed Response :-- It helped to avoid responses.
+	Error Handling 
+	Interceptors
+
+
+FORMS:--
+	1. Template Driven Forms
+		a.FormsModule
+		b.ngForm
+		c.ngModel
+		d.ngModelGroup
+		e.Tracking State and Validity
+		f.Validations and Errors Messages
+		g.ngSubmit
+	(If you are new to forms you should start with Template Driven Forms  )	
+	
+	(Once got basic understanding of Template driven form procees to Reactive Forms)
+	2. Reactive  Forms
+		a. Reactive form modules
+		b. Form Control
+		c.Form Control
+		d.setValue and path value
+		e.formBuilder serivices
+		f.validators functions
+		g.formArrays
+		h.ngSubmit
+
+
+Routing:--
+	1. Router Module
+	2.Configuring Module
+	3.Router Outlet
+	4.routerLink
+	5.Wildcard  Routes
+	6.Redirecting Routes
+	7.Router Parameters
+	8.Nested Routes
+	9.Relative Paths
+	10.Lazy loading routes
+	11.Route Guides
+
+Animations
