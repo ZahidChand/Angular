@@ -1,0 +1,19 @@
+There are lot of files when we create new project but we will look only few of them which are important
+
+1. package.json
+	This file contain dependencies , library, modules that are required for your angular applications to work
+
+The packages get installed when you enter command ng new FolderName
+and all the packages get installed inside node.modules folder.
+
+2.src Folder
+
+In src folder we have main.ts file which is entry part to our angular applications
+
+We also have app folder inside src which have app.module.ts which is root module of our applications and also app.component.ts which is root component of our applications
+
+When we run command ng serve our the execution comes to main.ts.
+Inside main.ts we bootstrapModule(AppModule).
+
+In appmodule we have 2 main files html and .ts file
+html contain view part and .ts contain logic part 

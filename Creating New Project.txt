@@ -1,0 +1,26 @@
+Creating New Project In Angular 
+You need to have some prerequisite installed in your system
+1.Node should be installed
+
+2.npm should be installed
+
+After that all you need to open any code editor and in terminal fire a command 
+
+
+ng new FolderName to create .
+
+The ng new command prompts you for information about features to include in the initial application project. Accept the defaults by pressing the Enter or Return key.
+
+The Angular CLI installs the necessary Angular npm packages and other dependencies. This can take a few minutes.
+
+It also creates the following workspace and starter project files:
+
+A new workspace, with a root folder named helloWorld
+An initial skeleton app project in the src/app subfolder.
+Related configuration files.
+The initial app project contains a simple Welcome application, ready to run.
+
+To run just simple fire a command ng serve
+and after compilation go to browser and type url
+localhost:4200 and it will open
+
