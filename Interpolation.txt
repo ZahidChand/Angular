@@ -1,0 +1,45 @@
+TEXT INTERPOLATION:-
+
+Text interpolation lets you incorporate dynamic string values into your HTML templates. Use interpolation to dynamically change what appears in an application view, such as displaying a custom greeting that includes the user's name.
+
+Interpolation uses the double curly braces {{ }} as delimiters.
+
+In interpolation we can do calculations as well
+eg{{2+4}} then output will be 6
+same you can do other arithmatic operations.
+
+Also you can perform concatination of two strings
+eg {{"Welcome " + title}}
+
+Output will be welcome and whatever the title name is that will be passed inside the title. 
+
+With interpolation you can also perform certain operation like finding length , upperCase, lowerCase etc
+eg
+{{title.length}}
+{{title.lowerCase()}}
+{{title.upperCase()}}
+and similarly  you can create your own method
+
+
+These were the things you can do in interpolation
+
+Now lets see what you cannot do in interpolation
+1. Assigning a expression to a variable
+if we write {{a = 2+3}}
+ we cannot get output because it will give an error that have Template Parse Error.
+So we cannot assign in interpolation
+When you want to get access global variable such as window ,screeen etc you cannot get access to it 
+{{window.location.href}}
+ you will get an error  cannot read property location of undefined.
+So the template dost not know about global javascript variables.
+
+But if you want to do that you want global javascript variable to display in interpolation then you can simply define in class and use that variable in html interpolation
+
+.ts
+public siteUrl = window.location.href
+
+and in .html
+{{siteUrl}}
+
+output will be displayed .
+http://localhost:4200/

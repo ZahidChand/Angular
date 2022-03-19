@@ -1,0 +1,16 @@
+Components are the main building block for Angular applications. Each component consists of:
+HTML
+CSS
+TYPESCRIPT
+
+An HTML template that declares what renders on the page
+A Typescript class that defines behavior
+A CSS selector that defines how the component is used in a template
+
+COMPONENT METADATA:--
+
+The @Component decorator identifies the class immediately below it as a component class, and specifies its metadata.
+
+When a class doesnot have @Component decorator in that then its a normal class not a component class.
+When you add @Component decorator in class then it behaves like component class.
+
