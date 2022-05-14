@@ -1,0 +1,52 @@
+Angular is a modular app architecture 
+
+Which means if you are built-in any application then that should be in modular 
+architecture.
+
+Eg:
+    src
+        contact                 ---> This is Module (1 Module have many components)
+            add-contact                 ---> This is component 
+            edit-contact                ---> This is component
+            delete-contact              ---> This is component
+            list-contact                ---> This is component
+
+        User                    -->  This is Module 
+            add-User                    ---> This is component
+            edit-User                   ---> This is component
+            list-User                   ---> This is component
+            delete-User                 ---> This is component
+
+        report                 -->  This is Module 
+            add-report              ---> This is component
+            edit-report             ---> This is component
+            list-report             ---> This is component
+
+
+        -->     Shared are something that if we want to use that repo as common 
+        in our whole application then its better you write it in shared repo 
+        So by doing that you can reuse the code again and again
+        
+        -->    It helps developer and save time of developer so that developer
+        can save time in not re writing that code.
+
+        Shared     
+            breadcrumb
+            footer
+            header
+
+        
+
+        services
+            contact.service.ts
+            user.service.ts
+            order.service.ts
+
+        In service there are all components services so you can write here your
+        business logic 
+        In short service are reuseable functions that we can use whenever needed.
+
+        assest
+            Img
+            mock data
+            

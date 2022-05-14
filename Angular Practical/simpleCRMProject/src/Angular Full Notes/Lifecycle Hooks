@@ -1,0 +1,25 @@
+Angular component lifecycle hooks 
+
+There are 8 lifecycle hooks in angular 
+
+1. ngOnIt()
+2. ngOnChanges()
+3. ngDoCheck()
+4. ngAfterContentInit()
+5. ngAfterContentChecked()
+6. ng ngAfterViewInit()
+7. ngAfterDoChecked()
+8. ngOnDestroy()
+
+
+
+By default we have ngOnIt 
+
+ Whichever lifecycle hooks we want to use
+    1. import it in the class 
+    2. Extend the implements interface 
+    3. Implement the method  
+
+ We can have any number of lifecycle hooks implemented 
+
+

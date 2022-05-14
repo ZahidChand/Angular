@@ -1,0 +1,16 @@
+Getting Started With Your First Angular Code
+
+Firt wee need to create nre project
+
+Syntax -- ng new <project-name>
+
+eg ng new SimpleCRM
+
+After this command it will generate all required files,folders,test script
+to run the application.
+
+After that just do ng serve and it will start compiling your application 
+and design will display you on port 
+http://localhost:4200
+
+This is default port no 
