@@ -1,0 +1,21 @@
+		Redirecting Routes
+		
+	When we want our route to redirect to another route -- we will implement the redirectTo in our routes arrays.
+	
+	The syntax to define is given below
+		
+		{path:",redirectTo:'home',pathMatch:'full'"}
+	
+	The empty path indicates that its the default route of the application.
+	
+	The empty path also requires us to mention that pathMatch should be "full" .
+	
+	
+	In simple words when we want to show any single page at very first when we write 
+	http://localhost:4200
+	the very first page which get display is what is passed inside redirectTo
+	then we can display any selected page according to us that .
+	
+	Eg :---
+	If we have redirectTo : 'welcome' then after pasing url localhost:4200 then it will land us to welcome page.
+		
