@@ -1,0 +1,25 @@
+Parametrized Routes
+
+We can configure and send parameteres to our routes.
+We need to congigure the route and mention that the value is dynamic.
+{path :'product/:id',component:'componentName'}
+
+Eg :---
+    product/10
+    product/10/20
+    
+ We can read the values in the component class and process the parameter.
+ 
+  URLs will look something like this 
+ 
+      http://localhost.com/user/10 -> it means that get the user with Id as 10 
+
+      http://localhost.com/search/mh/pune -> it means that search state Maharashtra and city Pune 
+
+      http://localhost.com/user/10/photos/34 -> it means that get  user whose  id = 10 and whose photo id = 34 .
+  
+  We can also write dynamic urls params
+  
+  While writing dynamic URLs/Params - make sure you write :(colon) for dynamic data
+
+ 
