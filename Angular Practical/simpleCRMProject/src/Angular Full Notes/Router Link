@@ -1,0 +1,19 @@
+ Router Link 
+
+ Router link is when we applied to and element in a template ,it makes that element a link that initiates navigation to a route.
+ 
+ In simple words whenever we wnat to create a link in template then we use router link.
+ 
+ Eg :--
+      <a [routerLink]="['/user/zahid']"> Click To Redirect</a>
+      
+ This is not the only way we can also use buttons.
+ 
+  We can have any number of router links in the template 
+
+ Router Links can be static or can be dynamic in nature 
+
+ Static Router Link -> <a [RouterLink]="'/user'"> </a>
+ 
+ 
+ 
