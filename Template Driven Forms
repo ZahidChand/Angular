@@ -1,0 +1,38 @@
+		Template Driven Form
+		
+	Template driven form are way from which we can achive forms in angular.
+	
+	Easy to use.
+	
+	Simple and straight forwards.
+	
+	All validations, form elements are all defined in the template file.
+	
+	Forms are tracked automatically.
+	
+	Whenever we talk about Template driven form then we use Two Way Data Binding .
+	
+	Most of the code reside in template file.
+	
+	Validations are mostly the default HTML5 Validations.
+
+	Minimum code is inside component and maximum code in inside the template i.e HTML file
+		
+	So because of that unit testing will be challenge.
+	
+	
+	***Step By Step Process for Template Driven Form:---
+		Step 1 :--->
+		
+		- For template driven form - FormsModule needs to be imported.
+		- If we Do Not Import this then we will get error when doing two way data binding.
+		- Add the module into the array list of imports.
+		
+		Step 2 :--->
+		
+		-ngForm
+			--> Form name as template variable using "#" for eg #loginForm
+		-ngModel
+			--> Every form feild should have a "name" attribute and ngModel attached to it.
+			
+		
