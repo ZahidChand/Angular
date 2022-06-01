@@ -1,0 +1,100 @@
+		Lazy Loading
+		
+	By default , ngModule are eagerly loaded , which means that as soon as the  application is loades, so do all ngModules, weather  or not they are immediate necessary.
+	
+	For large application for lots of routes, consider lazy loading .
+	 
+	Lazy Loading is a design pattern that loaded ngModules as needed.
+	
+	Lazy load helps keep initial bundle size smaller , which helps decrease load time.
+	
+	Angular application is made of multiple modules
+	
+	Eg if we have application of 
+
+		Load Management Syatem
+	
+	Then it will have multiple modules like
+			
+		Loan Management System
+			-Loans
+			-Customers
+			-Payments
+			-Invoices
+			-Reports
+			-Authentication
+			-Downloads
+			-Admin
+			
+	There can be many modules as well.
+	
+	So angular will by default load all modules at start at a same time.
+	
+	While loading all modules simultaneously  will make your application load slow performance.
+	
+	Also its a bad idea to expose modules which user is Not going to use.
+	
+	
+	So in this case lazy loading comes into the picture.
+	
+	--> Initially we will load only those modules which are mandatory.
+	--> Rest we will serve as "requested"
+	--> We will route for each module
+	
+	I will only load /payments route when user comes to Payments page.
+	
+		- Payments
+		    /payments
+		    	If user comes to /payments route then only we will load Payments page.
+		    	
+		    	In that it will helps us in 2 different ways:
+		    		1. It will Improve its performance.
+		    		2. We can verify if that user has access to that perticular module.
+		    	
+	The module generated using the angulat CLI - for Lazy Loading
+	-> There is No entry in AppModule.
+	-> Hence it will not be loaded.
+	
+	There are 2 types of Lazy Loading 
+		- Create Fearure Module	
+		- Configure loadChildren in appRouting
+		
+	ng g module <module_name> --route <module_route> --module app.module 
+
+	E.g ng g module payments --route payments --module app.module
+
+
+	 The above command will generate the following 
+    - A routing file for the module 
+    - A module file 
+    - A component 
+        - html
+        - css/scss
+        - spec
+        - class 
+    - UPDATE the app routing module 
+	
+	 /payments 
+    -> Module on demand and its children - if needed 
+        /payments/success	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

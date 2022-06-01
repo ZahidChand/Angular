@@ -1,0 +1,37 @@
+		Child Routes
+		
+	We can configure child route to create  more meaningful URL segments.
+	
+	The child routes array will follow syntax and  array concept as similar to  defining the routes array.
+	
+	Syntax to define the child routes:--
+	
+		{path : 'products',
+			children:[
+				{path : 'product-child',component:ProductViewComponent}
+			]
+		}
+		
+	We can configure any number of child routes to parent routes.
+	
+	Using logical group
+		
+		customers	--> Parent Route
+		
+		   view		---> Child Routes		URL Will be customer/view	
+		   	
+		   edit		---> Child Routes		URL Will be customer/edit
+		   	
+		   delete		---> Child Routes		URL Will be customer/delete
+		   
+	So this way you can set parent and child routes to look url more understandable.
+	
+	
+	Eg:----
+		{ path : 'products',
+			childrens:[
+				{path:'view',component : ProductViewComponent},
+				{path:'edit',component : ProductEditComponent},
+				{path:'view/:id',component : ProductIdComponent},
+			]
+		}

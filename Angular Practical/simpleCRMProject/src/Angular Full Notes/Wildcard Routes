@@ -1,0 +1,31 @@
+		Wildcard Routes
+	
+	Wildcard routes are nothing but whenever user enters a route which is invalid or something which does not exist or kind of 404 which doesnot exist in your application , so wildcard will intercepts that perticular route which is not avaliable in your application and then we can specify that what we should do.
+	
+	Wild card intercepts any invalid URLs in our application.
+	
+	When NO matching are found in the routes array, the router doesnot know where to go and hence result in console errors.
+	
+	Wildcard routes are defined in the routes array using.
+	
+	Usually a component named PageNotFound is mapped as a best practice.
+	
+	Every application should have it to handle bad routes, exception etc.
+	
+	IMP :----  This has to be the last route in your configuration 
+
+	We define by saying the path to match "**"
+
+	So we represent them usiong double **
+	
+	Syntax : -- {path:'**'}
+	
+	Eg :
+		{path:'**',component:PageNotFound}
+	
+	This should be in last of all routes not at top not in middle.
+	If we write it in middle then it will treate below routes also as PageNotFOund even after there is route of that perticular .
+	
+	So always define that route at last.
+	
+	
