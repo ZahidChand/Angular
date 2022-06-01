@@ -1,0 +1,95 @@
+		Forms Introduction
+		
+	Forms are very integral and essential building blocks of almost apps.
+	
+	Common form example we can see are
+		
+		-Login
+		-Forget
+		-Register
+		-Checkout Form
+		-Contact Us
+		
+	Forms alows us to gather information and data from user.
+	
+	Good way to intercat with the users and almost all website we need forms in some or other way.
+	
+	We can use any css framework as per choice -- Bootstrap and  Angular Material.
+	
+	*****Angular supports for forms:
+		- Two way data binding
+		- Change Tracking
+		- Validations
+		- Error Handling 
+		- Unit Testing
+		
+	*****Types of forms in angular:--
+	
+	--> Static / Template Driven Form
+	
+	--> Dynamic / Reactive Form
+	
+	
+	*** Static / Template Driven Form
+		
+		Easy to use.
+		
+		Template driven forms are simple and straight forwards.
+		
+		All the validations , form elements are defined in the template file.
+		
+		We will need to import FormsModule in app module to work with template driven form
+		
+		
+	
+	***Dynamic / Reactive Form
+		
+		All the form elements , user interaction and validations are handled in the component class
+		
+		We will make use of Angular's built in FormGroup and FormControl
+		
+		Can control better data binding.
+		
+		Exclusive  define custome regular expression patterns of error handling.
+		
+		We will need to import ReactiveFormsModule in our app module.
+		
+		Very flexible and allows user to define , develop complex requirement of forms
+		
+		More logic in the component class and less in HTML mark up itself
+		
+		
+	Ques	Which is better ..?
+		
+		Template Driven Form
+			- If your application form are simple straight forward.
+			- Fixed static form feild and elements.
+			- No complex validation or pattern matching.
+			
+		Reactive Form
+			- If your application forms are complex.
+			- Uses multiple dynamic components.
+			- Advance Validation required.
+			- Dependent Form Element
+			- Dynamic form generator based on user preference.
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
