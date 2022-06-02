@@ -1,0 +1,23 @@
+		Reset And Set Form
+		
+		***Reset Form
+		
+	When you are building a complex form in live project then there should be one more functionality of reseting the form.
+	
+	You should give user function of reseting a form which will help user to reset all feilds .
+	
+	We can easily reset the form in Template Driven Form by using 
+	
+	--> Reset Method.
+	
+	--> Form.reset()
+	
+	
+	
+		***Set Form
+	
+	Set value is used to set value in form
+	
+	--> Form.setValue() method is used to set value in angular.
+	
+	 
