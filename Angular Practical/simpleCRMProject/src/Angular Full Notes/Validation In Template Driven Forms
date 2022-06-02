@@ -1,0 +1,14 @@
+		Validations in Template Driven Form
+		
+	Adding Validation in Template Drivenr Form
+		- Disable  the form
+			--> Disable the form when the form is not valid.
+			
+		- HTML5 Validations
+			--> Required
+			--> minLength
+			--> maxLength
+			--> checked
+	
+	So this are all default HTML5 vlidations.
+	This are good when you are building a basic form , but if you are trying to make any advance complex form structure and custom validations then you always go with Reactive Form.
