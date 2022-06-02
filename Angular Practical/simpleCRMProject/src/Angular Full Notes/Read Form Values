@@ -1,0 +1,24 @@
+		Read Form Values
+		
+	We can read data back from the form.
+	
+	1. Get Value Of Entire Form
+		-this.addPartsForm.value
+		
+	--> When we say form.value then we get all the data back of form.
+	
+		
+	2. Get Value Of Specific Form Control
+		- this.addPartsForm.get('partName').value
+		
+	--> In this you can get any specific value from form 
+	--> Suppose there are 20 feilds in and we want only specific one then we an get by  .get('FeildName').value .
+	 
+		
+	3. Get Value On Changes
+		- this.addPartsForm.valueChanges
+		
+	--> There can also be situation that we want value when data is change like in dropdown radio button etc .
+	 So in that case valueChange is used.
+	 
+		
