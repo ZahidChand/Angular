@@ -1,0 +1,32 @@
+		Reactive Forms In Angular
+		
+	
+	- Reactive forms are a way to create Forms in angular applications.
+	
+	- What's different is how we implement , design and handel the form anmd the data.
+	
+	- All the form elements, user interaction and validations are handled in the component class.
+	
+	- We will make use of agular's built in formGroup and formControl.
+	 
+	- Using reactive forms we can control better data binding.
+	
+	- We can Exclusive define custom regular expression patterns of error handling.
+	
+	- We will need to import ReactiveFormModule in our app module.
+	
+	- Very flexible and allows user to define develop complex requirement of form.
+	
+	- More logic in component and less in HTML template.
+	
+	
+----- Angular maintains the state information of forms at all times.
+
+	--> ng-touched
+	--> ng-untouched
+	--> ng-dirty
+	--> ng-pristine
+	--> ng-valid
+	--> ng-invalid
+	
+	
