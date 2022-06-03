@@ -1,0 +1,22 @@
+		Built-In Reactive Form Validations In Angular
+		
+	1. Validation in formControl
+		this.addPartsForm = new FormGroup ({
+			'partName': new FOrmControl('Value',[
+				validators.minLength(10),
+				validators.required
+			])
+		})
+		
+	2. Multiple Validations using validators.compose
+		'partName':new FormControll('some'[
+			validators.minLength(10),
+			validators.required
+			validators.pattern('^[a-zA-Z]+$')
+		]),
+		
+	3. Get the state of the form -> Valid or Not
+		<button (click)="addPart()" [disabled]="!addPartsForm.valid"> Add Part </button>
+		
+	4. Disable the form button
+		this.addPartsForm.valid
