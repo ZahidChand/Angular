@@ -1,0 +1,38 @@
+    *** ng Template And ng Container
+    
+    --->    ng Container
+        
+        --  In angular we cannot use more than one template binding on an element.
+        
+        --  Mostly we cannot see that two binding on a same element.
+        
+        -- So one way to fix that is adding an extra div by adding extra div it helps in redundancy.
+        
+        -- Another way is that we can add ng container so that we dont need to add extra div .
+        
+        -- Think of ng container as a external parent element used for wrapping child elements and its not visible in  the dom.
+        
+    --->    ng Template
+      
+          -- Angular ng-template defines a template that doesn't render anything by default.
+          
+          -- Used with structural directives like ngSwitch,ngFor,etc
+          
+          
+          Eg ---> 
+              <ng-container *ngIf="isRoleDefined">
+                  <div*ngIf="user?.type == 'admin' ; else notAdmin">
+                        user is admin
+                  </div>
+
+                  <ng-template #notAdmin>
+                        user is not admin
+                  </ng-template>
+              <ng-container>
+              
+           So here insted of ng-container we can also add div tag
+           It will also work fine without an error .
+           But by adding ng-container no extra tag will get displayed inside DOM when we inspect in developer tool.
+
+
+         
