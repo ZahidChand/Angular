@@ -1,0 +1,34 @@
+    *** HTTP INTERCEPTORS
+    
+      -->   It intercept and handles and HTTP Request or HTTP Response.
+      
+      -->   Most interceptors transforms the outgoing request before passing it to the next interceptors in the chain,
+      by calling next.handle(transformedReq) .
+      
+      -->   An interceptor may transform theresponce event stream , as well by applying additional RXJS operators on the stream returned by next,handle().
+      
+      -->   It is also rare but valid for interceptors to return multiple responses on a event stream for a single request.
+      
+      --> Intercepts any outgoing request so we can add more details
+          -- mostly we add 
+              --authentications tokens
+          -- Headers
+              -- user name
+              -- roles
+           --Tokens
+           
+        --> iT is also use for common error handling across all HTTP Requests.
+        
+        For Eg--->
+            If we want to get values for backend then we send get request and if value is present in DB it will return us that value.
+            And if there is no value inside the DB then it will show us an error .
+            Then that error we should handle.
+            
+            So from  wherever we call that method the it wil give us that error so we need to handle it every time.
+            Now what if we handle that error once and call each time that would be better.
+            So with the help of HTTP Interceptors we can do that.
+            
+         --->   Angular provides us cli command to create interceptor
+            Syntax -->
+                  ng g interceptor <name>
+                  
