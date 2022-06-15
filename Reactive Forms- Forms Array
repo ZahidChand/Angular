@@ -1,0 +1,60 @@
+		Reactive Forms - Forms Array
+		
+	One of the most important feature working in reactive forms.
+	
+	For complex forms we need Form Arrays.
+	
+	Almost all modern application will need us to work with form arrays.
+	
+	DOM interaction in angular reactive form are implemented using the form arrays.
+	
+	Adding and removing elements are very easil handled using form arrays.
+	
+	FormArrays aggrigates  the value of the "child" FormControl into a Array.
+	
+	The status of the FormArray is calculated by reducing the statuses of its children.
+	
+	If any one of the control is invalid, the entire array becomes invalid.
+	
+	UserCase  1 :-->
+	
+	Eg: Define a simple formArray :-->
+		
+		let users = new FormArray([
+			new FormControl('zahid'),
+			new FormCOntrol('chand')
+		]);
+		
+		Now console log them and check the value.
+		console.log(users)
+		console.log(users.value)
+		
+		In this example we have 2 FormControls and we are grouping them to make an FormArray.
+		
+		In other words we can say this is an array with 2 formcontrols.
+		
+	
+	UserCase  2 :-->
+	
+		
+	Eg: Array With FormGroup :-->
+		
+		
+		'users' : new FormArray([
+			this.fb.group({
+				'name':new FormControl('zahid'),
+				'age':new FormControl('25'),
+				'dept':new FormControl('IT')
+			
+			})
+		])		
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
