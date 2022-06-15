@@ -1,0 +1,42 @@
+		Set Form Values In Angular
+		
+		There are three ways to set form value in angular:-->
+			
+		1. Set the value of entire form in one go
+			this.addPartsForm= new FormGroup({
+				'partId':new FormControl('Value Here'),
+				'partName':new FormControl('Value Here'),
+				'partDesc':new FormControl('Value Here')
+			
+			});
+			
+		2. Setting the form value using setValue
+		
+			const partObj = {
+				partId : 'Value 1',
+				partName : 'Value2',
+				partDesc : 'Value3' 
+			}
+			
+			this.addPartsForm.setValue(partObj);
+			
+		3. Set the value of limited/specific feilds using patchValue
+		
+			const partObj = {
+				partId : 'Value 1',
+				partName : 'Value2',
+				partDesc : 'Value3' 
+			}
+			
+			this.addPartsForm.patchValue(partObj);
+		
+	-- Best way to do is write using setValue.
+	
+	-- But when you are using setValue it requires all values for all the feilds/Keys.
+	
+	-- If we not pass values then it will give us an error.
+	
+	
+	-- PatchValue is similar to setValue but only difference is you don't have to pass all feilds/keys.
+	
+		
