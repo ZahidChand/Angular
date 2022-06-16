@@ -1,0 +1,39 @@
+		FormControl And FormGroup
+		
+	This are 3 important things in Reactive Form:--
+
+		1. FormControl
+		2. FormGroup
+		3. FOrmBuilder
+
+	In angular application there are forms and in that forms there are elements like input,radio,textarea checkbox etc. So this are elemenets in forms and that are called FormControl in angular.
+	
+	And when one or more FormControl are grouped together then its called FormGroup.
+	
+	
+
+	Whenever we are using Reactive form  in  component then we need to import that in component and also in that module.
+		
+		Eg:--
+			AppModule
+			
+				userModule ---> Module	------>	(Ractive)
+					add-user ----> Component
+					(Ractive)		
+		
+		
+	Steps to use Reactive Form --->
+		
+		Step1 :-->	Import and add in the ReactiveFormModule in the app.module.ts .
+		
+			- For template driven form  ReactiveFormModule need to be imported .
+			- If we DO NOt Import this we will get an error.
+			- Add the module into the array list of import.
+			
+		Step2 :-->	Create the form in app.component.html
+			- FormGroup
+				- We need to use the directive FormGroup for the entire form and gave it a name.
+			
+			-FormControlName
+				- Every form feild should have a "formControlName" attribute
+			
