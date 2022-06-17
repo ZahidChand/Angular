@@ -1,0 +1,27 @@
+		Nested Form Arrays
+		
+	*** Add Rows Dynamially Into The Form
+	
+		- There will be use cases when we will not know how many rows and feilds to expect .
+		
+		- That's when we will need to dynamically "Add Rows" to the form on the fly.
+		
+		- Adding new rows to form simply refers to appending/ pushing the form group or form controla to the FormArray at the runtime.
+		
+		-- FormArray
+		
+			--> Form Group
+		
+			--> Form Control
+			
+	*** Remove Rows Dynamically Into Form
+	
+		- There will be use cases when  we will have to remove the dynamically added  rows from the form.
+		
+		- That's when we will need to dynamically "Remove Rows" from the form on the fly.
+		
+		- We will need to capture the  index of row which we want to remove from the array.
+		
+		- Using the indexAt method we can easily point to the item we want to remove.
+		
+		 
