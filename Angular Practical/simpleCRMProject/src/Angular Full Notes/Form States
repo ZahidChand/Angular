@@ -1,0 +1,42 @@
+		Form States In Angular
+		
+	Angular has a mechanisim to track the forms at all time.
+	
+	It means whenever we work wioth forms angular knows excatly what state that perticular form is weather its valid, invalid, pristine, pending ,touched untouched and dirty.
+	
+	1. ng-valid :--> 
+		-It tells us weather that form is valid or not.
+	
+	2. ng-invalid :--> 
+		- Same way ng-invalid also return true or false when form s invlid or not.
+		- If its invalid it will t=give True and if its Not Invalid then it will give you False.	
+	
+	3. ng-pnding :-->
+		- It check weather the form is pending.
+
+	4. ng-pristine :-->
+		- It will tell you that user has touched it but the data was not modified.
+		
+	5. ng-dirty :-->
+		- iT means that the form was touched , the form data was touched and modified.
+		
+	6. ng-untouched :-->
+		- It means that the form controll was never touched.
+	
+	7. ng-touched :-->
+		- It means that you touched on it.
+		- You focus on it and then you steped out that means touched.
+		
+	
+	Eg:--
+		<span *ngIf="addCustomerFormGrp.controls.phone.hasError('required') && addCustomerFormGrp.controls.phone.touched">
+			{{'This field is required'}}
+		</span>
+		
+	Eg:--
+		<span *ngIf="addCustomerFormGrp.controls.phone.hasError('min') || addCustomerFormGrp.controls.phone.hasError('max')">
+			Phone Should be 10 digits
+		</span>
+		
+	So we are getting the error message based on what type of validator it is and then we are checking .touched.
+	
