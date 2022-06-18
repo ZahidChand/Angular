@@ -1,0 +1,13 @@
+			*** View Child
+		
+		
+	-->	ViewChild is a most used decorators and has many many important use cases.
+	
+	-->	We can use @viewChild to inject a reference to existing component or DOM element.
+	
+	-->	@viewChild gets loaded after ngAfterViewInit() method.
+			-- don't write this oninit
+	
+	-->	viewChild decorator is used when we want to get any other component or element of one component to another component
+	
+	
