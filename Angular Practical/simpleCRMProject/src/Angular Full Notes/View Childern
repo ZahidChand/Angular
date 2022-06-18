@@ -1,0 +1,31 @@
+		*** View Children
+		
+	
+	-->	ViewChildren is most used decorator and has many important use cases.
+	
+	-->	We can use @viewChildren to inject a reference to a query list of a component or DOM Element.
+	
+	-->	@viewChildren gets loaded after ngAfterViewInit() method.
+		-- Don't try this onInit
+	
+	
+	-->	ViewChildren is very similar to viewChild but only difference is that viewChild will get you one element whereas viewChildren will get you an list of component and DOM Element.
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
