@@ -1,0 +1,50 @@
+		HTTP Client
+		
+	- HTTPClient is used for performing HTTP request and response.
+	
+	- The HttpClient service is available in the @angular/common/http package.
+	
+	- The new HttpCLient service is included in the Http Client Module which is used to initiate HTTP request and respnse in angular apps.
+	
+	- The HttpClientModule neds to be imported into the module. Usually in the app module.
+	
+	- HttpClient also gives other useful functionality like params, interceptor,headers etc.
+	
+	***Http Methods :-->
+		
+		1. get()
+		2. post()
+		3. put()
+		4. delete()
+		5. head()
+		6. jsonp()
+		7. options()
+		8. patch()
+		
+	***Benifits Of HttpClient
+		
+		- HttpClient includes observables API's
+		
+		- HttpCLient can have the Http headers in options.
+		
+		- HttpClient include the highlt testability features.
+		
+		- HttpClient includes typed request.
+		
+		- HttpClient includes response object
+		
+		- HttpClient includes request and response interception 
+		
+		- HttpClient includes error handling.
+		
+	Most of the application have CRUD Operations .
+	
+	--> Create -  POST Method Call.
+	
+	--> Read -    GET Method Call.
+	
+	--> Update - PATCH/PUT Method Call.
+	
+	--> Delete -	DELETE Method Call.
+	
+	
