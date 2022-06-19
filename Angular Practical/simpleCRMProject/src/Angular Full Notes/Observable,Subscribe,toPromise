@@ -1,0 +1,142 @@
+		*** Observable ,Subscribe ,ToPromise
+		
+		
+	***Observable***	
+		
+		-->	Observable are sequesnce of data that get emitted time to time or over period of time.
+		
+		--> 	Angular uses observables very heavly .
+		
+		-->	If we talk about asynch , event handling , routing , http , form changes angular uses observables for all this operations.
+		
+		-->	Observables provide support for passing messages between parts of your application .
+		
+		-->	An observable can deliver multiple values of any type -- literals , messages, or events , depending on the context.
+		
+		-->	Angular makes use of observables as an interface to handle a variety of common asynchronous operations.
+		
+		-->	They are used frequently in angular and are ther recommended technique for event handling , asynchronous programming, and handling multiple values.
+		
+	
+	Whenever we talk about observable there is also a concept of observer.
+	
+	-- What Observer do is it continiously listen to observable and getting the data.
+	
+	-- We can control when to start and end listening to the observable using observer
+	
+	--Observer has 3 methods that we can use
+		- next()
+		- error()
+		- complete()
+	
+	-- Observable are useless when we dont subscribe them
+	
+	-- We can do 
+		subscribe
+		toPromise
+		pipe
+		
+	
+	-- How to create an observable
+		There are 2 ways to create observables
+		
+		1.1 --	RXJS operator "of"
+			-- It convert an array to observable
+			
+		1.2 --	new Observable
+	
+		1.1 -- in a component create and array 
+		
+		Eg -->
+			contacts$ : any;
+			user : any;
+			
+			ngnInit(){
+				this.user= ['Walter','Jessy','Skyler','Hank'];
+				this.contacts$ = of(this.user),
+				
+				console.log(this.contacts$)		==> O/P It will be an observable
+				
+			}
+	//This was the first technique that we can create an observable
+	
+		1.2 --
+		userStatus :any;
+		ngnInit(){
+			new Observables(observer =>{
+				setTimeout(() => {
+					observer,next("In Progress");		// It means that insert that vlaue after 2 seconds;  
+				}, 2000);
+				
+				setTimeout(() => {
+					observer,next("Pending");		// It means that insert that vlaue after 4 seconds;  
+				}, 4000);
+				
+				setTimeout(() => {
+					observer,next("Completed");		// It means that insert that vlaue after 6 seconds;  
+				}, 6000);
+			}).subscribe(data => {
+				this.userStatus = data;
+			}, error => {
+				console.log(error)
+			})
+		}
+	
+	
+	In .html file call that  userStatus
+	<h1> User Status Is {{userStatus}}</h1>
+	
+	
+	-- Where new Observable is used
+		- unit test to mock data to ypu component to services there you can use new Observable and send data
+	
+-----------------------------------------------------------------------------------------------------------------------------------------	
+	
+	***Subscribe***	
+		
+		--	just by creating an observable that doen't help us in anything unless you subscribe to it.
+		
+		--	Subscribe means listen to the data that is send to the observable and then we can do our logical processing or updating or working with our data that we get.
+		
+		--	Whenever we have an observable we have to subscribe to it  to get the new data in the output.
+		
+		-- 	Whenever observale will send data with the help of subscribe we can display data or we can display errors as required.
+		
+		--	this.userService.getUser().subscribe( data =>{
+				this.user = data;
+			},(err) =>{
+				console.log("Unable to get data from URL" + err)
+			})
+	
+		
+		--	next.handle(request.clone({setHeaders : {API_KEY}}));
+		
+-----------------------------------------------------------------------------------------------------------------------------------------		
+		
+	***toPromise***	
+		
+		-- Like we saw observables produce some values at the period of time.
+		
+		-- But what if there is no change in data.
+		
+		-- So in that case we will use toPromise because we know that the data is not changing and also we know what data will come next so we that case we will use toPromise.
+		
+		-- It make a call and once you get data then Do Not Get Further Data i.e stop listening to new data which is getting.
+		
+		-- toPromise is that when you want show only data once without updating that data.
+		
+		-- 	this.userService.getUser.toPromise().
+			then(response => {
+				this.user = response;	
+			}).catch(error =>{
+				console.log(error)	
+			})
+		
+		
+		
+		
+		
+		
+		
+		
+		
