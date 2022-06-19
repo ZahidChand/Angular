@@ -1,0 +1,40 @@
+		*** Ng Content --- Content Projection
+		
+		
+		--> Content projection is a pattern , in which you insert , or project the content you want to use inside the another
+		component.
+		
+		--> In simple word we can easily pass conent from one component to another component.
+		
+		--> If the component has No Parent and Child relation even though we can send content with the help of content projection.
+		
+		Eg -->
+			we have a card component that accept content provided by another component.
+			
+		
+		--> We do content projection by using <ng-content>
+		
+		
+		*** There are 3 ways to use content projection
+			
+			1. Single Slot
+			2. Multiple Slot
+			3. Conditional Slot
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
