@@ -3,7 +3,6 @@ HTML
 CSS
 TYPESCRIPT
 
-
 An HTML template that declares what renders on the page
 A Typescript class that defines behavior
 A CSS selector that defines how the component is used in a template
