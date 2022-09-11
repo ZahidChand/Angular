@@ -2,7 +2,7 @@ Components are the main building block for Angular applications. Each component 
 HTML
 CSS
 TYPESCRIPT
-       
+
 
 An HTML template that declares what renders on the page
 A Typescript class that defines behavior
