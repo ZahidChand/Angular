@@ -2,6 +2,7 @@ TEXT INTERPOLATION:-
 
 Text interpolation lets you incorporate dynamic string values into your HTML templates. Use interpolation to dynamically change what appears in an application view, such as displaying a custom greeting that includes the user's name.
 
+
 Interpolation uses the double curly braces {{ }} as delimiters.
 
 In interpolation we can do calculations as well
