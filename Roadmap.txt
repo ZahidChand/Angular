@@ -1,7 +1,7 @@
 Prerequisit for angular are
 HTML
 CSS
-JAVASCRIPT
+JAVASCRIPT 
 
 We dont need to master this but basic understanding should be there before starting Angular.
 
