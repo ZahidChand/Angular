@@ -3,7 +3,7 @@ Parametrized Routes
 We can configure and send parameteres to our routes.
 We need to congigure the route and mention that the value is dynamic.
 {path :'product/:id',component:'componentName'}
-
+ 
 Eg :---   
     product/10
     product/10/20
