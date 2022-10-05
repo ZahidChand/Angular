@@ -1,4 +1,4 @@
-Creating New Project In Angular  
+Creating New Project In Angular   
 You need to have some prerequisite installed in your system
 1.Node should be installed
 
