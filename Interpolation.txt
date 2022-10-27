@@ -20,7 +20,7 @@ eg
 {{title.lowerCase()}}
 {{title.upperCase()}}
 and similarly  you can create your own method
-
+ 
 
 These were the things you can do in interpolation
 
