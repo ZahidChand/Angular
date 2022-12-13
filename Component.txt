@@ -1,4 +1,4 @@
-Components are the main building block for Angular applications. Each component consists of: 
+Components are the main building block for Angular applications. Each component consists of:  
 HTML
 CSS
 TYPESCRIPT
