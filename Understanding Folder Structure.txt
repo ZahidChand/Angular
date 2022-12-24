@@ -1,4 +1,4 @@
-There are lot of files when we create new project but we will look only few of them which are important 
+There are lot of files when we create new project but we will look only few of them which are important
 
 1. package.json
 	This file contain dependencies , library, modules that are required for your angular applications to work
